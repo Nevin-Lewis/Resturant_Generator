@@ -20,7 +20,7 @@ Nevin Lewis @Nevin-Lewis, Maria Ramirez @mar-ramg, Jared Kim @jkim011, Jonathan 
 
 MIT License
 
-Copyright (c) 2022 BrettGlerum
+Copyright (c) 2022 Nevin Lewis
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
