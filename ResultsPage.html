@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Finder Results</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script type="module" src="./assets/google.js"></script>
+
+</head>
+
+<body class="mx-w-md mx-auto">
+
+    <header>
+        <h1 class="text-7xl font-bold text-center p-10 text-white bg-red-900">Restaurant Finder 🍽️</h1>
+    </header>
+
+    <main class="px-8 grid h-screen justify-items-center bg-cover bg-left-bottom"
+    style="background-image: url('./image/restaurant-bg.jpg') ;">
+
+    <div class="text-2xl grid grid-cols-3">
+
+        <div class="p-2 m-3  bg-slate-500 text-center rounded-md" id="map"></div>
+
+        <!-- List of results for top 3 or random generated -->
+        <!-- Clicking on each list item should change the map to that restaurant -->
+        <div class="results p-7 h-2/4 m-3 bg-slate-500 text-center rounded-md">
+            <h2 class="text-4xl font-medium">Your Restaurant Results: </h2>
+            <ol class="results-list">
+                <li class="result-item p-2"> *Restaurant 1*</li>
+                <button id="result-loc"  class="hover:underline" >TESTS </button>
+                <li class="result-item p-2"> *Restaurant 2* </li>
+                <button id="result-loc" class="hover:underline"> </button>
+                <li class="result-item p-2"> *Restaurant 3*</li>
+                <button id="result-loc" class="hover:underline"> </button>
+            </ol>
+        <button class="bg-red-900 text-white p-2 m-2 rounded-lg hover:outline outline-offset-1 outline-red-50 ..." id="go-back-btn" onclick="history.back()">Go Back</button>
+        </div>
+
+        <!-- Buttons to save results and go back to home -->
+        <div id="panel" class="go-back p-7 m-3 bg-slate-500 text-center rounded-md">
+            <p>Total Distance: <span id="total"></span></p>
+        </div>
+
+    </div>
+
+    </main>
+    <footer class="bg-red-900 text-white text-center h-10 w-full ...">
+        <p>Made by The Indecisives</p>
+    </footer>
+    <script 
+    src="https://maps.googleapis.com/maps/api/js?key=(ENTERKEYHERE)&libraries=places&callback=initMap&v=weekly"
+    defer
+  ></script>
+    
+</body>
+
+</html>
